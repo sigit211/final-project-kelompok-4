@@ -19,4 +19,14 @@ router.post('/', (req, res) => {
     })
 });
 
+router.get('/', (req,res)=>{
+    Product.find({})
+    .then((produk)=>{
+        res.status(200).json(produk)
+    })
+    .catch((err)=>{
+        res.status(200).json(err)
+    })
+})
+
 module.exports = router;

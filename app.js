@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-const cart = require("./models/cart");
+const routerCart = require("./routers/cartRouter");
 const cart_contents = require("./models/cart_contents");
 const routerProduct = require('./routers/productRouters')
 const transaction = require("./models/transaction");
@@ -16,7 +16,7 @@ con.on("error", console.error.bind(console, "MongoDB connection error:"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use("/cart", cart);
+app.use("/cart", routerCart);
 app.use("/cart_contents", cart_contents);
 app.use("/product", routerProduct);
 app.use("/transaction", transaction);
