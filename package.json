@@ -1,0 +1,25 @@
+{
+  "name": "final-project-kelompok-4",
+  "version": "1.0.0",
+  "description": "warung tepat - cart management",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sigit211/final-project-kelompok-4.git"
+  },
+  "author": "kelompok 4",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sigit211/final-project-kelompok-4/issues"
+  },
+  "homepage": "https://github.com/sigit211/final-project-kelompok-4#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.13",
+    "nodemon": "^2.0.15"
+  }
+}
